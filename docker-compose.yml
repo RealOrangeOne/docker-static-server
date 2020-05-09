@@ -1,0 +1,10 @@
+version: "2.3"
+
+services:
+  static:
+    build:
+      context: .
+    volumes:
+      - ".:/srv:ro"
+    ports:
+      - "80:80"
