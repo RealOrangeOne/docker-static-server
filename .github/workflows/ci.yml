@@ -4,12 +4,19 @@ on: [push, pull_request]
 
 jobs:
   docker:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v1
     - name: Build image
       run: docker-compose build
     - name: Show image info
       run: docker images
+
+  shellcheck:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install shellcheck
+      run: sudo apt-get update && sudo apt-get install -y shellcheck
+    - name: shellcheck
+      run: shellcheck docker-entrypoint.sh

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-cat /etc/nginx/default.conf.template | envsubst > /etc/nginx/conf.d/default.conf
+envsubst < /etc/nginx/default.conf.template > /etc/nginx/conf.d/default.conf
 
 cat /etc/nginx/conf.d/default.conf
 
