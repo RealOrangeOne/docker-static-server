@@ -10,8 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build image
-      run: docker build . --tag ${GITHUB_REPOSITORY,,}
-    - name: Compose build
       run: docker-compose build
     - name: Show image info
       run: docker images
