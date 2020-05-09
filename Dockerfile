@@ -10,4 +10,6 @@ COPY ./docker-entrypoint.sh /docker-entrypoint.sh
 
 COPY ./default.conf /etc/nginx/default.conf.template
 
+RUN envsubst < /etc/nginx/default.conf.template > /etc/nginx/conf.d/default.conf
+
 CMD ["/docker-entrypoint.sh"]
