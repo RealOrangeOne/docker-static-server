@@ -12,7 +12,7 @@ If you're not really bothered, the default `nginx` container will work just fine
 
 - Use environment variables for [customization](#customization)
 - Healthcheck endpoint
-- Don't transparently unzip GZIP files
+- GZIP all files
 - Use `X-Forwarded-For` header when getting client IP
 - No index file
 
