@@ -14,7 +14,6 @@ If you're not really bothered, the default `nginx` container will work just fine
 - Healthcheck endpoint
 - GZIP all files
 - Use `X-Forwarded-For` header when getting client IP
-- No index file
 
 Nginx makes a brilliant file server regardless of how you use it.
 
