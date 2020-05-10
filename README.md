@@ -2,7 +2,9 @@
 
 ![CI](https://github.com/RealOrangeOne/docker-static-server/workflows/CI/badge.svg)
 
-Customizable and performant static file server - powered by Nginx
+Customizable and performant static file server - powered by Nginx.
+
+__Note__: This container is designed for hosting static files, rather than for serving a static site.
 
 ## _"Why not just use `nginx:alpine`?"_
 
