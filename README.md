@@ -37,4 +37,5 @@ The server will serve files in the `/srv` directory. This directory can be mount
 
 This image supports some customizations:
 
-- `$INDEX` (`on` / `off`): Enable file listing, powered by [`fancy_index`](https://www.nginx.com/resources/wiki/modules/fancy_index/)
+- `$INDEX` (`on` / `off`): Enable file listing, powered by [`autoindex`](https://nginx.org/en/docs/http/ngx_http_autoindex_module.html)
+- `$FANCY_INDEX` (`on` / `off`): Enable file listing, powered by [`fancy_index`](https://www.nginx.com/resources/wiki/modules/fancy_index/)
