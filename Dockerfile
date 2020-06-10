@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:3.11
+FROM lsiobase/alpine:3.12
 
 RUN apk add --no-cache nginx-mod-http-fancyindex nginx gettext curl
 
