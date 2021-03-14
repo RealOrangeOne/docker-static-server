@@ -4,7 +4,7 @@ set -e
 
 # Update nginx user id
 deluser nginx
-adduser -u $PUID -D nginx
+adduser -u "$PUID" -D nginx
 
 envsubst < /etc/nginx/default.conf.template > /etc/nginx/conf.d/default.conf
 
