@@ -11,6 +11,8 @@ COPY ./docker-entrypoint.sh /docker-entrypoint.sh
 
 COPY ./default.conf /etc/nginx/default.conf.template
 
+ENV PUID 1000
+
 RUN envsubst < /etc/nginx/default.conf.template > /etc/nginx/conf.d/default.conf
 
 HEALTHCHECK --interval=1m --timeout=3s CMD curl -f http://localhost/.ping || exit 1
