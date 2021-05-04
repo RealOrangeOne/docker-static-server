@@ -1,6 +1,6 @@
 FROM alpine:3.13
 
-RUN apk add --no-cache nginx-mod-http-fancyindex nginx gettext curl
+RUN apk add --no-cache nginx-mod-http-fancyindex nginx gettext
 
 RUN mkdir -p /run/nginx
 
@@ -14,8 +14,6 @@ COPY ./default.conf /etc/nginx/default.conf.template
 ENV PUID 1000
 
 RUN envsubst < /etc/nginx/default.conf.template > /etc/nginx/conf.d/default.conf
-
-HEALTHCHECK --interval=1m --timeout=3s CMD curl -f http://localhost/.ping || exit 1
 
 EXPOSE 80
 
