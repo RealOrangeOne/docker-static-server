@@ -13,7 +13,7 @@ COPY ./default.conf /etc/nginx/default.conf.template
 
 ENV PUID 1000
 
-RUN mkdir /etc/nginx/conf.d/ && envsubst < /etc/nginx/default.conf.template > /etc/nginx/conf.d/default.conf
+RUN envsubst < /etc/nginx/default.conf.template > /etc/nginx/http.d/default.conf
 
 EXPOSE 80
 
