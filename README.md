@@ -4,7 +4,7 @@
 
 Customizable and performant static file server - powered by Nginx.
 
-__Note__: This container is designed for hosting static files, rather than for serving a static site.
+__Note__: This container is designed for hosting static files, rather than for serving a static site. For that, check out [`docker-website-server`](https://github.com/RealOrangeOne/docker-website-server).
 
 ## _"Why not just use `nginx:alpine`?"_
 
