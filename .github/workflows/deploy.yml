@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - 'master'
+  schedule:
+    - cron: '0 0 1 * 0'  # Keep it up-to-date automatically
+
 
 jobs:
   docker:
