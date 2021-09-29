@@ -15,6 +15,8 @@ ENV PUID 1000
 
 RUN envsubst < /etc/nginx/default.conf.template > /etc/nginx/http.d/default.conf
 
+RUN touch /etc/nginx/extra.conf
+
 EXPOSE 80
 
 CMD ["/docker-entrypoint.sh"]
