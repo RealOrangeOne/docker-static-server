@@ -5,7 +5,7 @@ on:
     branches:
       - 'master'
   schedule:
-    - cron: '0 0 1 * 0'  # Keep it up-to-date automatically
+    - cron: '0 0 1 * *'  # Keep it up-to-date automatically
 
 
 jobs:
